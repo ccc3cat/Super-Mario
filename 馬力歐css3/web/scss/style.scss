@@ -1,3 +1,147 @@
 @use 'reset';
-@use 'function' as *;
-@use 'variable' as *;
+@use 'Keyframes';
+@use 'function'as *;
+@use 'variable'as *;
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+
+
+body {
+    font-family: $main-font;
+    font-optical-sizing: auto;
+    background-color: $primary-color;
+    color: $light;
+}
+
+main {
+    @extend %flex-center;
+    justify-content: center;
+}
+
+section {
+    height: 100vh;
+}
+
+.topbar {
+    position: fixed;
+    @extend %flex-center;
+    padding: map-get($interval, btn-xy);
+}
+
+.logo {
+    height: 100%;
+    margin-right: 50px;
+}
+
+.menu {
+    @extend %flex-center;
+
+    a {
+        color: $light;
+        margin: map-get($interval, menu);
+    }
+}
+
+#banner {
+    overflow: hidden;
+    @extend %flex-center;
+    justify-content: center;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $primary-color;
+        width: 100%;
+        height: 200px;
+clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    }
+
+    div {
+        flex: 1;
+    }
+
+    .content {
+        padding: 0 10%;
+
+        h1 {
+            font-size: map-get($font-size, xxl);
+            font-weight: map-get($font-weight, bolder);
+            line-height: 0.8;
+
+            span {
+                font-size: map-get($font-size, l);
+                font-weight: map-get($font-weight, bold);
+            }
+        }
+
+        p {
+
+            font-size: 1.3rem;
+        }
+
+        a {
+            @extend %btn-main;
+        }
+    }
+
+    .photo {
+        position: relative;
+        height: 100%;
+
+        figure {
+            position: absolute;
+        }
+
+        .mario01 {
+            width: 60%;
+            @include animation (mario01, 0s);
+            top: 5vh;
+            left: -20%;
+        }
+
+        .luigi {
+            width: 55%;
+            top: 13vh;
+            right: 16%;
+            @include animation (luigi, 0.35s);
+        }
+
+        .brick {
+            width: 85%;
+            top: 10vh;
+            right: -10%;
+            @include animation (brick, 0.45s)
+        }
+
+        .mario02 {
+            width: 65%;
+            @include animation (mario02, 4s);
+        }
+
+        .peach {
+            width: 70%;
+            @include animation (peach, 4.35s);
+        }
+
+        .pipe {
+            width: 50%;
+            @include animation (pipe, 4.55s);
+        }
+
+        .mario03 {
+            width: 85%;
+            @include animation (mario03, 8s);
+        }
+
+        .toad {
+            width: 55%;
+            @include animation (toad, 8.35s);
+        }
+
+        .star {
+            width: 60%;
+            @include animation (star, 8.55s);
+        }
+    }
+}

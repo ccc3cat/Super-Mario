@@ -1,0 +1,13 @@
+$main-font:'Catamaran';
+// 字級
+$font-size:( // map-get($font-size , )
+    xxl:11rem,
+    m:1.3rem,
+    l:2rem,
+    s:1.15rem
+);
+// 字重
+$font-weight:( // map-get($font-weight , )
+    bolder:900,
+    bold:700,
+);

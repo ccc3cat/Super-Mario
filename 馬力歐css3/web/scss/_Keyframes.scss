@@ -1,0 +1,70 @@
+@keyframes mario01 {
+    0% {opacity: 0; top: 100vh; right: 50%;}
+    10%{opacity: 1; top: 5vh; right: 50%;}
+    20%{opacity: 1; top: 5vh; right: 50%;}
+    30%{opacity: 0; top: 100vh; right: 50%;}
+    100%{opacity: 0; top: 100vh; right: 50%;}
+}
+
+@keyframes luigi {
+    0% {opacity: 0; top: 100vh; left: 35%;}
+    10%{opacity: 1; top: 20vh; left: 35%;}
+    20%{opacity: 1; top: 20vh; left: 35%;}
+    30%{opacity: 0; top: 100vh; left: 35%;}
+    100%{opacity: 0; top: 100vh; left: 35%;}
+}
+
+@keyframes brick {
+    0% {opacity: 0; top: 4vh; right: -100%;}
+    10%{opacity: 1; top: 5vh; right: -2%;}
+    20%{opacity: 1; top: 5vh; right: -2%;}
+    30%{opacity: 0; top: 4vh; right: -100%;}
+    100%{opacity: 0; top: 4vh; right: -100%;}
+}
+
+@keyframes mario02 {
+    0% {opacity: 0; top: 100vh; right: 45%;}
+    10%{opacity: 1; top: 20vh; right: 45%;}
+    20%{opacity: 1; top: 20vh; right: 45%;}
+    30%{opacity: 0; top: 100vh; right: 45%;}
+    100%{opacity: 0; top: 100vh; right: 45%;}
+}
+
+@keyframes peach {
+    0% {opacity: 0; top: 100vh; right: 3%;}
+    10%{opacity: 1; top: 15vh; right: 3%;}
+    20%{opacity: 1; top: 15vh; right: 3%;}
+    30%{opacity: 0; top: 100vh; right: 3%;}
+    100%{opacity: 0; top: 100vh; right: 3%;}
+}
+@keyframes pipe {
+    0% {opacity: 0; top: 100vh; right: 25%;}
+    10%{opacity: 1; top: 2vh; right: 25%;}
+    20%{opacity: 1; top: 2vh; right: 25%;}
+    30%{opacity: 0; top: 100vh; right: 25%;}
+    100%{opacity: 0; top: 100vh; right: 25%;}
+}
+
+
+@keyframes mario03 {
+    0% {opacity: 0; top: 100vh; right: 45%;}
+    10%{opacity: 1; top: 17vh; right: 45%;}
+    20%{opacity: 1; top: 17vh; right: 45%;}
+    30%{opacity: 0; top: 100vh; right: 45%;}
+    100%{opacity: 0; top: 100vh; right: 45%;}
+}
+
+@keyframes star {
+    0% {opacity: 0; top: 100vh; right: 25%;}
+    10%{opacity: 1; top: 2vh; right: 25%;}
+    20%{opacity: 1; top: 2vh; right: 25%;}
+    30%{opacity: 0; top: 100vh; right: 25%;}
+    100%{opacity: 0; top: 100vh; right: 25%;}
+}
+@keyframes toad {
+    0% {opacity: 0; top: 100vh; right: 5%;}
+    10%{opacity: 1; top: 25vh; right: 5%;}
+    20%{opacity: 1; top: 25vh; right: 5%;}
+    30%{opacity: 0; top: 100vh; right: 5%;}
+    100%{opacity: 0; top: 100vh; right: 5%;}
+}
